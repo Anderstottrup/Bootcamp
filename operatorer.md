@@ -1,8 +1,8 @@
 # Operatorer 
 
-* "=" Lig med
+* "=" Tildelings operator
 
-* "==" Lig med
+* "==" Sammenlings operator
 
 * "===" Værdi og type er lig med
 
@@ -12,9 +12,9 @@
 
 * "!==" Ikke lig med værdi eller type
 
-* "<" Mindre 
+* "<" Mindre end (3 < 5) 
 
-* ">" Større
+* ">" Større end (5 > 3)
 
 * "<=" Mindre eller lig med
 
@@ -28,8 +28,8 @@
 
 * "/" Dividere
 
-* "%" Modulus
+* "%" Modulus trækker tallet for sig selv, indtil det ikke kan mere, tallet til sidst om ikke kan trækkes fra mere, vil blive resultatet
 
-* "&&" Og
+* "&&" begge koderne skal være true for at nedenstående skal virke
 
-* "| |" Hvis en af dem skulle være
+* "| |" én af koderne skal være true for at nedenstående kode skal virke

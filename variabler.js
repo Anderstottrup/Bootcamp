@@ -2,7 +2,7 @@
 // console.log("navn");
 
 // let alder = ("21");
-// console.log("alder");
+// console.log(alder);
 
 // let byNavn = ("Roskilde");
 // console.log(byNavn);

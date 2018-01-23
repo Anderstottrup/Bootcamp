@@ -1,4 +1,4 @@
-let x = 0;
+// let x = 0;
 // while (x <= 5) {
 //     console.log(x);
 //     x++;
@@ -10,7 +10,7 @@ let x = 0;
 // }
 // while (x <= 5);
 
-// for (x = 0; x < 10; x++) {
+// for (let x = 0; x < 10; x++) {
 //     console.log(x);
 // }
 
@@ -20,7 +20,7 @@ let x = 0;
 // }
 // while (x = 0);
 
-// for (x = 2017; x >= 1917; x--) {
+// for (let x = 2017; x >= 1917; x--) {
 //     console.log(x);
 // }
 
