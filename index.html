@@ -11,25 +11,49 @@
 <body>
     <div id="content"></div>
     <script>
+        // fetch('https://swapi.co/api/people/')
+        //     .then((response) => {
+        //         return response.json();
+        //     })
+        //     .then((json) => {
+        //         let content = document.getElementById("content");
+
+        //         json.results.forEach(person => {
+
+        //             let h1 = document.createElement('h1');
+        //             let p = document.createElement('p');
+        //             h1.textContent = person.name;
+        //             p.textContent = "højde " + person.height + " Øjenfarve " + person.eye_color;
+        //             content.appendChild(h1);
+        //             content.appendChild(p);
+        //         });
+        //     })
+        //     .catch(function (error) {
+        //         console.log(error);
+        // });
         fetch('https://swapi.co/api/people/')
             .then((response) => {
-                return response.json();
+                if (response.status != 200) {
+                    throw new Error('Der gik noget');
+                } else {
+                    return response.json();
+                }
+
             })
             .then((json) => {
-                let content = document.getElementById('content');
-                let h1 = document.createElement('h1');
-                let h2 = document.createElement('h1');
-                let h3 = document.createElement('h1');
-                let h4 = document.createElement('h1');
-                h1.textContent = json.results[0].name;
-                h2.textContent = json.results[0].height;
-                h3.textContent = json.results[0].gender;
-                h4.textContent = json.results[0].eye_color;
-                content.appendChild(h1);
-                content.appendChild(h2);
-                content.appendChild(h3);
-                content.appendChild(h4);
+                let content = document.getElementById("content");
+
+                json.results.forEach(person => {
+
+                    let h1 = document.createElement('h1');
+                    let p = document.createElement('p');
+                    h1.textContent = person.name;
+                    p.textContent = "højde " + person.height + " Øjenfarve " + person.eye_color;
+                    content.appendChild(h1);
+                    content.appendChild(p);
+                });
             })
+
             .catch(function (error) {
                 console.log(error);
             });
